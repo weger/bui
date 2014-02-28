@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-var du = require('./lib/commander'),
-    install = require('./lib/install'),
-    webserver = require('./lib/webserver'),
-    release = require('./lib/release'),
-    colors = require('colors');
+var du = require('../lib/commander'),
+    install = require('../lib/install'),
+    webserver = require('../lib/webserver'),
+    release = require('../lib/release'),
+    colors = require('../lib/colors');
 
 //colors 全局设置所处可用
 colors.setTheme({silly:"rainbow",input:'grey',verbose:'cyan',prompt:'grey',info:'green',data:'grey',help:'cyan',warn:'yellow',debug:'blue',error:'red'});
@@ -28,6 +28,6 @@ du.command('release')
    .option('-d,--dest','发布目录，相对于当前的')
    .action(release);
 
-du.version(require('./package').version);
+du.version(require('../package').version);
 du.parse(process.argv);
 
