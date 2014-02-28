@@ -1,20 +1,19 @@
 {
-  "name": "du",
+  "name": "bui",
   "description" : "Modular front-end development platform",
   "author": "z.w",
-  "keywords" : ["du"],
+  "keywords" : ["bui"],
   "version": "0.0.1",
   "scripts": {
-    "start": "du [install|server|release]"
+    "start": "bui [install|server|release]"
   },
   "bin": {
-    "du": "./bin/cli.js"
+    "bui": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/weger/du"
+    "url": "https://github.com/weger/bu"
   },
-  "main": "./bai.js",
   "dependencies": {
     "colors": "~0.6.0"
   },
