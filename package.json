@@ -1,0 +1,24 @@
+{
+  "name": "du",
+  "description" : "Modular front-end development platform",
+  "author": "z.w",
+  "keywords" : ["du"],
+  "version": "0.0.1",
+  "scripts": {
+    "start": "du [install|server|release]"
+  },
+  "bin": {
+    "du": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weger/du"
+  },
+  "main": "./bai.js",
+  "dependencies": {
+    "colors": "~0.6.0"
+  },
+  "engine": {
+    "node": ">=0.8.18"
+  }
+}
