@@ -1,0 +1,112 @@
+/**
+ * common.css
+ * 全局公共样式
+ */
+
+ 
+ 
+/* =页面基础框架(基本样式+布局)
+-------------------------------------------------------------- */
+/* 重置样式 */
+@import 'reset.css';
+
+/* 布局 
+@import 'layout.css';*/
+
+/* 响应式 
+@import 'screen.css';*/
+
+/* 常规设置 
+@import 'general.css';*/
+
+/* =页面公共模块
+-------------------------------------------------------------- */
+/* 头部 
+@import 'header.css';*/
+
+/* 模块 
+@import 'modules.css';*/
+
+/* 底部 
+@import 'footer.css';*/
+
+body{
+    background:url(../images/home_bg.jpg) #242628 no-repeat center -10px;
+}
+
+/* .banner{
+height: 700px;
+width: 100%;
+color: #fff;
+text-align: center;
+background-size: cover;
+position: relative;
+margin-top: -60px;
+}
+.banner h1{
+display: inline-block;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 0;
+right: 0;
+margin-top: -100px;
+color: #fff;
+font-size: 4.2rem;
+text-rendering: optimizeLegibility;
+font-weight: 300;
+text-shadow: rgba(0,0,0,0.4) 0 1px 6px;
+}
+.banner h2{
+display: inline-block;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 0;
+right: 0;
+margin-top: -20px;
+color: #fff;
+font-size: 1.5rem;
+text-rendering: optimizeLegibility;
+font-weight: 300;
+text-shadow: rgba(0,0,0,0.4) 0 1px 6px;
+}
+.banner .action{
+display: inline-block;
+text-align: center;
+position: absolute;
+top: 50%;
+left: 0;
+right: 0;
+margin-top: -10px;
+}
+.banner .button-add {
+font-size: 1.2em;
+margin-top: 40px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+min-height: 35px;
+width: auto;
+display: inline-block;
+padding: 0.9em 1.37em;
+cursor: pointer;
+outline: none;
+text-decoration: none;
+color: #fff;
+font-size: 11px;
+line-height: 13px;
+font-weight: 300;
+text-align: center;
+letter-spacing: 1px;
+text-transform: uppercase;
+text-shadow: none;
+border-radius: 0.2em;
+border: rgba(0,0,0,0.05) 0.1em solid;
+-webkit-transition: background 0.3s ease,border-color 0.3s ease,width 1s ease;
+-moz-transition: background 0.3s ease,border-color 0.3s ease,width 1s ease;
+transition: background 0.3s ease,border-color 0.3s ease,width 1s ease;
+}
+.button-add, .button-add[type="submit"] {
+background: #9fbb58;
+} */
