@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="sample" default="merge" basedir=".">
+    <property name="jar.dir" location="./"></property>
+    <property name="build.dir" location="../js/common/"></property>
+    <property name="tpl.dir" value="../tpls"></property>
+    <property name="filename" value="tpls.js"></property>
+    <property name="val" value="tpls"></property>
+    <property name="output.encoding" value ="UTF-8"/>
+    
+    <target name="copy" depends="merge">
+        <move file="${filename}" todir="${build.dir}"/>
+        <echo message="移动完成...."/>
+    </target>
+    
+    <target name="merge">
+        <java classname="util.TransferUtil">
+            <arg value="${tpl.dir}"/>
+            <arg value="${filename}"/>
+            <arg value="${val}"/>
+            <arg value="1"/>
+            <classpath>
+                <pathelement location="${jar.dir}/combo.jar"/>
+                <pathelement path="${java.class.path}"/>
+            </classpath>
+        </java>
+        <echo message="模板合并完成...."/>
+    </target>
+</project>
+
+<!--
+    SOURCE MAPS(语法数和压缩前):
+    optimize=uglify2 && generateSourceMaps=true && preserveLicenseComments=false
+    
+    C:\Windows\System32\cmd.exe
+    node r.js -o baseUrl=js name=main out=built.js optimize=none|uglify|uglify2|closure
+    
+
+    node r.js -o cssIn=css/index.css out=css/index-min.css optimizeCss=standard
+    
+    optimizeCss的取值有standard/none/standard.keepLines/standard.keepComments/standard.keepComments.keepLines。
+    none  不压缩，仅合并
+    standard  标准压缩 去换行、空格、注释
+    standard.keepLines  除标准压缩外，保留换行
+    standard.keepComments  除标准压缩外，保留注释
+    standard.keepComments.keepLines  除标准压缩外，保留换行和注释
+    -->
