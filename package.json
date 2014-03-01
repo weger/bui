@@ -3,7 +3,7 @@
   "description" : "Modular front-end development platform",
   "author": "z.w",
   "keywords" : ["bui"],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "start": "bui [install|server|release]"
   },
