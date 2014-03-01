@@ -1,7 +1,7 @@
 ({
     appDir: "../",
     baseUrl: "./js",
-    dir: '../release',
+    dir: '../../release',
     keepBuildDir: false,
     skipModuleInsertion: true,
     removeCombined: true,
