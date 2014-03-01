@@ -14,9 +14,6 @@
     "type": "git",
     "url": "https://github.com/weger/bu"
   },
-  "dependencies": {
-    "colors": "~0.6.0"
-  },
   "engine": {
     "node": ">=0.8.18"
   }
