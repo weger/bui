@@ -4,6 +4,7 @@ var bui = require('../lib/commander'),
     install = require('../lib/install'),
     webserver = require('../lib/webserver'),
     release = require('../lib/release'),
+    tplcombo = require('../lib/tplcombo'),
     colors = require('../lib/colors');
 
 //colors 全局设置所处可用
@@ -16,7 +17,7 @@ bui.command('install')
 bui.command("tplcombo")
    .description(" - 用于开发时合并模板文件")
    .option('-w,--watch','监听文件变化，及时合并')
-   .action(webserver);
+   .action(tplcombo);
 
 bui.command("server")
    .description(" - 用于开发时调试的WebServer,默认访问地址：" + "http://localhost:8888".warn)

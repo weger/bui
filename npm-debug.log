@@ -1,0 +1,27 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'uninstall', '-g', 'bui' ]
+2 info using npm@1.2.32
+3 info using node@v0.10.12
+4 info /usr/local/lib/node_modules/bui unbuild
+5 verbose read json /usr/local/lib/node_modules/bui/package.json
+6 info preuninstall bui@0.1.7
+7 info uninstall bui@0.1.7
+8 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild bui@0.1.7
+9 verbose /usr/local/bin,[object Object] binRoot
+10 info postuninstall bui@0.1.7
+11 error Error: EACCES, unlink '/usr/local/lib/node_modules/bui'
+11 error  { [Error: EACCES, unlink '/usr/local/lib/node_modules/bui']
+11 error   errno: 3,
+11 error   code: 'EACCES',
+11 error   path: '/usr/local/lib/node_modules/bui' }
+12 error Please try running this command again as root/Administrator.
+13 error System Darwin 13.0.0
+14 error command "node" "/usr/local/bin/npm" "uninstall" "-g" "bui"
+15 error cwd /Users/zhang/projects/bui
+16 error node -v v0.10.12
+17 error npm -v 1.2.32
+18 error path /usr/local/lib/node_modules/bui
+19 error code EACCES
+20 error errno 3
+21 error stack Error: EACCES, unlink '/usr/local/lib/node_modules/bui'
+22 verbose exit [ 3, true ]
