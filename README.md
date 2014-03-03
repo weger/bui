@@ -4,6 +4,7 @@ Bui
 
 Bui是一个通用模块化前端开发平台，提供了常用的项目构建、调试、优化等一系列开发时的支持,只为提升开发效率。
 
+[![Build Status](https://travis-ci.org/weger/bui.png?branch=master)](https://travis-ci.org/weger/bui)
 
 安装与更新
 -------
