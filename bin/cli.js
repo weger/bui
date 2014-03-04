@@ -20,8 +20,8 @@ bui.command("tplcombo")
    .action(tplcombo);
 
 bui.command("server")
-   .description(" - 用于开发时调试的WebServer,默认访问地址：" + "http://localhost:8888".warn)
-   .option('-s,--port','启动端口号')
+   .description(" - 用于开发时调试的WebServer,默认地址：" + "http://localhost:8888".warn)
+   .option('-p,--port','启动端口号')
    .action(webserver);
 
 bui.command('release')
