@@ -1,7 +1,8 @@
 /**
  * @module dataLoader
- * 
+ *
  * @name 数据加载层，为不同模块提供相同数据
+ * 追加对csrf 漏洞的修复
  * @author HI:yuebin_felix  <yuebin01@baidu.com>
  * @version 2013-11-21
  */
@@ -82,7 +83,7 @@ define(function() {
                     if(opts.type && opts.type.toLowerCase() == "post"){
                         var cookie = document.cookie;
                         var csrftoken;
-                        var flag = false; 
+                        var flag = false;
                         if (cookie) {
                             var cookies = cookie.split(';');
                             for (var i = 0; i < cookies.length; i++) {
@@ -111,7 +112,7 @@ define(function() {
                     }));
                 };
             }
-            
+
         }
     };
 });
