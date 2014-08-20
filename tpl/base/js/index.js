@@ -1,6 +1,6 @@
 /**
  * @module index
- * 
+ *
  * @name 首页
  * @version 1.0.0
  */
@@ -11,7 +11,7 @@ require.config({
 });
 
 require(["./common", "./tools"], function (){
-    require(['modules/list'], function(list) {
+    require(['modules/indexList'], function(list) {
         // 模块初始化
         list.doInit();
     });
