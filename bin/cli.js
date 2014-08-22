@@ -16,6 +16,7 @@ bui.command('install')
 
 bui.command("tplcombo")
    .description(" - 用于开发时合并模板文件")
+   .option('-i,--i18n','支持国际化')
    .option('-w,--watch','监听文件变化，及时合并')
    .action(tplcombo);
 
