@@ -3,7 +3,7 @@
  *
  * @name 数据加载层，为不同模块提供相同数据
  * 追加对csrf 漏洞的修复
- * @author HI:yuebin_felix  <yuebin01@baidu.com>
+ * @author HI:lovexctk  <zhangwei11@baidu.com>
  * @version 2013-11-21
  */
 

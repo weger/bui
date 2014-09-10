@@ -11,6 +11,7 @@
         'pagination' : "common/pagination",
         'jquery': 'require-jquery',
         'utils': "tools/utils",
+        "i18n": 'tools/i18n',
         'urlParser': "tools/urlParser",
         'dataLoader': "tools/dataLoader",
         'jquery.tmpl': 'tools/jquery.tmpl',
@@ -20,17 +21,17 @@
     modules: [
         {
             name: 'common',
-            include: ['urls', 'tpls', 'pagination']
+            include: ['urls', 'tpls', 'pagination', 'i18n!nls/lang']
         },
         {
             name: 'tools',
-            include: ['utils', "dataLoader", 'urlParser', 'jquery.tmpl'],
+            include: ['utils', "i18n", "dataLoader", 'urlParser', 'jquery.tmpl', 'i18n!nls/lang'],
             exclude: ['jquery']
         },
         {
             name: 'index',
             include: ['modules/list'],
-            exclude: ['common', 'tools']
+            exclude: ['common', 'tools', 'i18n!nls/lang']
         }
     ],
     fileExclusionRegExp: /^\.|^datas|^build|admin|html5\.js/
