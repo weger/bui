@@ -30,7 +30,6 @@ bui.command("less2css")
     .description(" - 用于转换less文件至css")
     .action(less2css);
 
-
 bui.command('release')
    .description(" - 打包压缩优化所有文件，加版本戳防缓存，发布项目")
    .option('-d,--dest','发布目录，相对于当前的')

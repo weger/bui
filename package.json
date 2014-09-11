@@ -5,7 +5,7 @@
   "keywords" : ["bui"],
   "version": "0.1.13",
   "scripts": {
-    "start": "bui [install|server|release]"
+    "start": "bui [install|server|release|less2css]"
   },
   "bin": {
     "bui": "./bin/cli.js"
