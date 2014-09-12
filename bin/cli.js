@@ -5,6 +5,7 @@ var bui = require('../lib/commander'),
     webserver = require('../lib/webserver'),
     release = require('../lib/release'),
     tplcombo = require('../lib/tplcombo'),
+    less2css = require('../lib/less2css')
     colors = require('../lib/colors');
 
 //colors 全局设置所处可用
@@ -24,6 +25,10 @@ bui.command("server")
    .description(" - 用于开发时调试的WebServer,默认地址：" + "http://localhost:8888".warn)
    .option('-p,--port','启动端口号')
    .action(webserver);
+
+bui.command("less2css")
+    .description(" - 用于转换less文件至css")
+    .action(less2css);
 
 bui.command('release')
    .description(" - 打包压缩优化所有文件，加版本戳防缓存，发布项目")
